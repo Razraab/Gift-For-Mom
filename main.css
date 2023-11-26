@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+textarea{
+    outline: none;
+    resize: none;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 1px #ffffff;
+    color: black;
+    font-weight: bold;
+    transition: box-shadow 0.2s;
+    vertical-align: middle;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 5px 1px #000000;
+}
+
+@media(min-width: 500px){
+    .wrapper{
+        margin: 50px;
+    }
+
+    .item{
+        max-width: 120px;
+        max-height: 80px;
+        width: 120px;
+        height: 80px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px){
+    .wrapper{
+        margin: 50px;
+    }
+
+    .item{
+        max-width: 85px;
+        max-height: 55px;
+        width: 85px;
+        height: 55px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 375px){
+    .wrapper{
+        margin: 50px;
+    }
+
+    .item{
+        max-width: 75px;
+        max-height: 45px;
+        width: 75px;
+        height: 45px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 345px){
+    .wrapper{
+        margin: 20px;
+    }
+
+    .item{
+        max-width: 65px;
+        max-height: 35px;
+        width: 65px;
+        height: 35px;
+        font-size: 9px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 255px){
+    .wrapper{
+        margin: 15px;
+    }
+
+    .item{
+        max-width: 50px;
+        max-height: 30px;
+        width: 50px;
+        height: 30px;
+        font-size: 8px;
+        text-align: center;
+    }
+}
